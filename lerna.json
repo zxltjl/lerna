@@ -1,0 +1,22 @@
+{
+    "version": "1.0.0",
+    "npmClient": "cnpm",
+    "packages": [
+        "packages/*"
+    ],
+    "command": {
+        "publish": {
+            "ignoreChanges": [
+                ".gitignore",
+                "*.log",
+                "*.md"
+            ]
+        },
+        "bootstrap": {
+            "ignore": "npm-*",
+            "npmClientArgs": [
+                "--no-package-lock"
+            ]
+        }
+    }
+}
